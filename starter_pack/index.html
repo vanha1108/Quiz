@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer="true"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-center">
+        <div class="title f-grid">
+            <div class="left">WPR</div>
+            <div class="right">
+                <ul >
+                    <li><p style="margin: 0;">M</p></li>
+                    <li><p style="margin: 0;">E</p></li>
+                    <li><p style="margin: 0;">R</p></li>
+                    <li><p style="margin: 0;">N</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <div class="center-img">
+        <img class="img-si" src="images/background.jpg" style="">
+        <p class ="ground_color">HTML Quiz</p>
+        <p style="font-size: 13px;">By Lê Quang Hưng</p>
+    </div>
+    <div class="conn-center">
+        <div class="screnn1" id = "screnn1">
+            <h2>The Test</h2>
+            <p style="margin-bottom: 18px;">The test contains 10 questions and there is no time limit</p>
+            <p style="margin-top: 0px;">The test is not offical, it's just a nice way to see how much you know, or don't know, about HTML</p>
+            <h2>Count Your Score</h2>
+            <p>You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed, Maximum score is 10 point</p>
+            <div class="custom-btn">
+                <h2>Start the quiz</h2>
+                <p>Good luck!</p>
+                <button class="btn__" onclick="show_quest()">Start the HTML quiz ></button>
+            </div>
+        </div>
+        <div class="screen2" id ="screen2" style="display: none;">
+            
+        </div>
+        <div class="custom-btn subb" style="display: none;" id="showbtn">
+            <button id="display-modal" class="btn__sm">Submit your answers ></button>
+        </div>
+        <div class="result custom-btn" id="result">
+            
+        </div>
+    </div>
+  
+
+<!-- =========================== -->
+<!-- <button id="display-modal">Click Me</button> -->
+
+
+   <!-- Modal -->
+   <div class="hide-me" id="modal">
+    <div id="overlay">
+      <div class="modal-window">
+        <div class="modal-content" style="text-align: center;
+        padding-top: 10%;">
+          <p>Are you sure finish?</p>
+        </div>
+        <div class="modal-actions" style="text-align: center;
+        padding-top: 10px;">
+          <button  class="confirm-button action" onclick="get_data()">Confirm!</button>
+          <button class="action">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ================================ -->
+</div>
+</body>
+
+</html>
